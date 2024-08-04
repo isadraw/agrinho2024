@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalidadesdocampo</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            font-size: 20px; /* Aumenta o tamanho do texto geral */
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 24px; /* Aumenta o tamanho dos links de navegação */
+            color: #000;
+        }
+
+        h1 {
+            font-size: 36px; /* Aumenta o tamanho do título principal */
+        }
+
+        h2 {
+            font-size: 28px; /* Aumenta o tamanho do subtítulo */
+        }
+
+        .snake-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            background: #fff;
+            width: 700px; /* Aumenta o tamanho da imagem */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Descubra seu tipo de cobra</h1>
+    <div class="snake-container" id="snakeContainer"></div>
+
+    <script>
+        // Função para determinar o tipo de cobra com base no ano
+        function getSnakeType(year) {
+            const types = [
+                { name: "Naja", image: "naja.jpg" },
+                { name: "Jiboia", image: "jiboia.jpg" },
+                { name: "Cascavel", image: "cascavel.jpg" },
+                { name: "Python", image: "python.jpg" },
+                { name: "Naja", image: "cobrareal.jpg" }
+            ];
+
+            const index = year % types.length;
+            return types[index];
+        }
+
+        const year = prompt("Digite o ano do seu nascimento:");
+        
+        if (year) {
+            const snake = getSnakeType(parseInt(year, 10));
+            const container = document.getElementById('snakeContainer');
+            container.innerHTML = `
+                <h2>Você é uma ${snake.name}!</h2>
+                <img src="${snake.image}" alt="${snake.name}">
+            `;
+        } else {
+            alert("Por favor, insira um ano válido.");
+        }
+    </script>
+</body>
+</html>

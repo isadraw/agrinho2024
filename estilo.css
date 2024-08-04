@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#topo{
+	height: 70px;
+	background:#b3d7ff;
+}
+#menu{
+	background-color: #a5cbfc;
+}
+#menu ul, li{
+	display: inline-table;
+	padding: 15px 25px;
+	cursor: pointer;
+}
+#menu ul li a{
+	color: rgb(145, 205, 255);
+}
+#menu ul li:hover{
+	background-color: #b4c6ee	(255,192,203);
+}
+#conteudo{
+	background-color: #7db3fa;
+	min-height: 70px;
+}
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 30s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+img{
+	max-width: 90%;
+	width: 10cm;
+	height: 15cm;
+	object-fit: contain;
+}
+        .imagem-centralizada {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .centralizado {
+            text-align: center;
+        }
+        .imagem-container {
+            text-align: center;
+        }
+        .link-pequeno {
+            font-size: 0.75em; 
+            color: #1837be; 
+        }
+        .link-pequeno:hover {
+            text-decoration: underline; 
+		}
+		.font-google {
+			font-family: 'Roboto';
+		}
+		body {
+			font-family: 'Merriweather' ;
+			margin: 0;
+			padding: 0;
+			background-color: #90d6ff;
+		}
+		
+		header {
+			background-color:rgb(31, 56, 168) ;
+			color: #fff;
+			padding: 10px 0;
+			text-align: center;
+		}
+		
+		header h1 {
+			margin: 20;
+		}
+		
+		nav ul {
+			list-style: 'Merriweather';
+			padding: 20;
+		}
+		
+		nav ul li {
+			display: inline;
+			margin: 0 10px;
+		}
+		
+		nav ul li a {
+			color: #fff;
+			text-decoration:'Merriweather' ;
+		}
+		
+		nav ul li a:hover {
+			text-decoration: 'Merriweather' ;
+		}
+		
+		main {
+			padding: 20px;
+		}
+		
+		.latest-news, .info-section {
+			margin-bottom: 30px;
+		}
+		
+		article {
+			margin-bottom: 20px;
+		}
+		
+		article img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+		
+		footer {
+			background-color: #0a3f53;
+			color: #96d8ff;
+			text-align: center;
+			padding: 10px 0;
+		}
+		
+		img{
+			max-width: 90%;
+			width: 10cm;
+			height: 15cm;
+			object-fit: contain;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			align-items: center; 
+		  }
+		  .container {
+			display: flex;
+			align-items: center; 
+		  }
+		 
